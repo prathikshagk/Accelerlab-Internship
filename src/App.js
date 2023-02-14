@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Images from "./assets.Images.jpg"
+import Demo from "./components/Demo";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  var x=10;
+  var text;
+  if (x===20){
+    text="Equal";
+  }
+  else{
+    text="Not Equal"
+  }
+    return (
+      <div className="App">
+      <h1> Hello world </h1>
+
+      <h3> {x>=10?"Greater than or equal to 10":"Not equal to 10"}</h3>
+
+      <Demo para={text}/>
+      {/* <img src=[[mage] alt="pic" width="50%"> */}
+      </div>
+
+
+    );
 }
 
 export default App;
